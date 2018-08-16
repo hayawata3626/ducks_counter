@@ -1,37 +1,38 @@
+/* State */
 const initialState = {
-  state: 0
-}
+  count: 0
+};
 
 /* Actions */
-const INCREMENT  = "INCREMENT";
+const INCREMENT = "INCREMENT";
 const DECREMENT = "DECREMENT";
 
-
 /* Action Creator */
-export function increment(){
+export function increment() {
   return {
-    type: 'INCREMENT'
-  }
+    type: "INCREMENT"
+  };
 }
 export function decrement() {
   return {
-    type: 'DECREMENT'
-  }
+    type: "DECREMENT"
+  };
 }
 
 /* Reducers */
-export default function reducer(state=initialState, action ) {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case INCREMENT :
+    case INCREMENT:
       return {
-        ...state, count: state.count + 1
-      }
-    case DECREMENT :
+        ...state,
+        count: state.count + 1
+      };
+    case DECREMENT:
       return {
-        ...state, count: state.count - 1
-      }
+        ...state,
+        count: state.count - 1
+      };
     default:
       return state;
   }
 }
-
