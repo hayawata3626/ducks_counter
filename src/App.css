@@ -22,7 +22,21 @@
   font-size: large;
 }
 
+.logoArea {
+  background: #282c34;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
