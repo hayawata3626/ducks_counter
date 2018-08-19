@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
-import Counter from "./modules/Counter";
+import Counter from "./modules/counter";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
