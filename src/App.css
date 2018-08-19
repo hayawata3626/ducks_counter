@@ -49,8 +49,24 @@
   margin: 20px auto 0;
 }
 
+.todoList {
+  width: 660px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.todoList_title {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
 .todo_content.completed {
   text-decoration: line-through;
+}
+.todo_header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 /* addToto */
