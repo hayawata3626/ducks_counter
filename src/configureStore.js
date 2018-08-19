@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
-import Counter from "./modules/counter";
+import Todo from "./modules/todo";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 const reducer = combineReducers({
-  Counter
+    Todo
 });
 
 const configureStore = initialState =>

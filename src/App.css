@@ -40,3 +40,33 @@
     transform: rotate(360deg);
   }
 }
+
+/* Todo */
+
+.todo {
+  border: 1px solid #ccc;
+  width: 500px;
+  margin: 20px auto 0;
+}
+
+.todo_content.completed {
+  text-decoration: line-through;
+}
+
+/* addToto */
+.addToto {
+  margin-top: 20px;
+}
+.addToto_input {
+  padding: 10px;
+  font-size: 14px;
+}
+.addToto_button {
+  border: none;
+  padding: 10px;
+  background: #323232;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 10px;
+}
