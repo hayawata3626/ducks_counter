@@ -1,12 +1,5 @@
 /* State */
 let nextTodoId = 0;
-// const initialState = [
-//     {
-//         text: "髪を切りに行く",
-//         completed: false,
-//         id: nextTodoId
-//     }
-// ]
 
 /* Action */
 const ADD_TODO = "ADD_TODO";
