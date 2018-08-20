@@ -3,19 +3,19 @@ import * as todoListModule from "../modules/todo";
 import TodoList from "../components/TodoList";
 
 const mapStateToProps = state => {
-    return {
-        todos: state.Todo
-    };
+  return {
+    todos: state.Todo
+  };
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        addTodo: () => dispatch(todoListModule.addTodo()),
-        toggleTodo: (id) => dispatch(todoListModule.toggleTodo(id))
-    };
+  return {
+    addTodo: () => dispatch(todoListModule.addTodo()),
+    toggleTodo: id => dispatch(todoListModule.toggleTodo(id))
+  };
 };
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(TodoList);
